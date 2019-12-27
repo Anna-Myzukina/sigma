@@ -1,7 +1,7 @@
-class StaticPagesController < ApplicationController
-  def home
-  end
+# frozen_string_literal: true
 
-  def checklist
-  end
+class StaticPagesController < ApplicationController
+  def home; end
+
+  def checklist; end
 end
