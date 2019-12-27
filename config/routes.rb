@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  get 'users/new'
+  get  '/signup',  to: 'users#new'
 
-  get 'static_pages/home'
-  get 'static_pages/audit'
-  get 'static_pages/checklist'
+  get '/home',      to: 'static_pages/home'
+  get '/audit',     to: 'static_pages/audit'
+  get '/checklist', to: 'static_pages/checklist'
 
-  root 'application#hello'
+  root 'static_pages#home'
 end
