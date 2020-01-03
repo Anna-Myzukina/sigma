@@ -5,20 +5,12 @@
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Audit",   '#' %></li>
             <li><%= link_to "Checklist",   '#' %></li>
+        
         <% if logged_in? %>
           <li><%= link_to "Users", '#' %></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Account <b class="caret"></b>
-            </a>
-            <ul>
-              <li>
-                <%= link_to "Log out", logout_path, method: :delete %>
-              </li>
-            </ul>
-          </li>
+          <li><%= link_to "Log out", logout_path, method: :delete %></li>
         <% else %>
-          <li><%= link_to 'Sign in', login_path, class:"sign" %></li>
+          <li><%= link_to 'Log in', login_path, class:"sign" %></li>
           <li><%= link_to 'Sign up', signup_path, class:"sign" %></li>
         <% end %>
           </ul>

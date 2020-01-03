@@ -1,0 +1,8 @@
+<li id="checklist-<%= checklist.id %>">
+  <%= link_to gravatar_for(checklist.user, size: 50), checklist.user %>
+  <span class="user"><%= link_to checklist.user.name, checklist.user %></span>
+  <span class="content"><%= checklist.content %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(checklist.created_at) %> ago.
+  </span>
+</li>

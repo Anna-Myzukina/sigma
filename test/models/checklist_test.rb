@@ -3,7 +3,7 @@ require 'test_helper'
 class ChecklistTest < ActiveSupport::TestCase
   def setup
     @user = users(:anna)
-    @checklist = Ckecklist.new(content: "Lorem ipsum", user_id: @user.id)
+    @checklist = @user.checklists.new(content: "Lorem ipsum")
   end
 
   test "should be valid" do
