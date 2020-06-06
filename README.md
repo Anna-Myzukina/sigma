@@ -6,7 +6,8 @@
 
 ## Description
 
-    In this project, you’ll be building an web-application that allows you to create and manage checklists and audits.
+  In this project, you’ll be building an web-application that allows you to create
+  and manage checklists and audits.
 
 ## Environment
 
